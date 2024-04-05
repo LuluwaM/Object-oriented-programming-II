@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="256.0" prefWidth="415.0" style="-fx-background-color: #374171;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecttechapp.AboutController">
+   <children>
+      <Label fx:id="AboutInofrtion" layoutX="9.0" layoutY="76.0" prefHeight="63.0" prefWidth="397.0" text="  Through the application, you can view the available technical events" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="130.0" prefHeight="17.0" prefWidth="234.0" text="and hackathons and book them." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecttechapp.Win1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="610.0">
+         <children>
+            <Button fx:id="ev" layoutX="75.0" layoutY="187.0" mnemonicParsing="false" onAction="#showEvents" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #3e4a7a;" text="Events" textFill="#f8f7f7" />
+            <Button fx:id="hackathon" layoutX="75.0" layoutY="225.0" mnemonicParsing="false" onAction="#showHackathon" style="-fx-background-color: #2c334a;" text="Hackathon" textFill="WHITE" />
+            <Label fx:id="tech" layoutX="37.0" layoutY="95.0" text="Tech Application" textFill="#374171">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="118.0" fitWidth="150.0" layoutX="460.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="73.0" layoutX="1.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../blue.jpg" />
+               </image>
+            </ImageView>
+            <MenuBar fx:id="tools" layoutY="1.0" prefHeight="25.0" prefWidth="122.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#About" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
